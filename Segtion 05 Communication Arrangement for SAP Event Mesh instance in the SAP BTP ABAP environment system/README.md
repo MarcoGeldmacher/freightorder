@@ -1,7 +1,7 @@
 
 ### 1. Communication Arrangement for SAP Event Mesh instance in the SAP BTP ABAP environment system
 
-Then in Fiori launchpad of your SAP BTP ABAP environment system you first need to build a communication arrangement with sap_com_0092 scenario and the same service key instance you used to build your communication arrangement in the cloud system.
+Then in Fiori launchpad of your SAP BTP ABAP environment system you first need to build a communication arrangement with the sap_com_0092 scenario and the same service key instance you used to build your communication arrangement in the cloud system.
 
 ### 2. To open the Fiori launchpad right-click your project in ADT and navigate to Properties
 
@@ -13,20 +13,20 @@ Then in Fiori launchpad of your SAP BTP ABAP environment system you first need t
 
 ### 4. Navigate to Communication Arrangement and click New to create a communication arrangement.
 
-Choose sap_com_0092 as Scenario and copy the service key of your event mesh instance under Service Key( Section 1 step 4) . You need to create a Communication User. Click New and enter a User Name, Description and Propose Password. Copy the generated password and save it for later. Click Create.
+Choose sap_com_0092 as Scenario and copy the service key of your event mesh instance under Service Key (Section 1 step 4). You need to create a Communication User. Click New and enter a User Name, Description and Propose Password. Copy the generated password and save it for later. Click Create.
 
 
 ![Alt text](img/image-2.png)
 ![Alt text](img/image-3.png)
 
-Now you need to change the Arrangement Name to ZSAP_COM_0092_FREIGHTORDER_IN .
+Now you need to change the Arrangement Name to ZSAP_COM_0092_FREIGHTORDER_IN.
 
 ![Alt text](img/image-4.png)
 ![Alt text](img/image-5.png)
 
 ## 5. Communication Arrangement for event consumption model in the SAP BTP ABAP environment system
 
-The connection between your BTP system and event mesh instance is done, now you need to create another communication arrangement with the scenario you already published in ADT:
+The connection between your BTP system and Event Mesh instance is done, now you need to create another communication arrangement with the scenario you already published in ADT:
 
 Navigate to **Communication Arrangement**, click **New**.
 
