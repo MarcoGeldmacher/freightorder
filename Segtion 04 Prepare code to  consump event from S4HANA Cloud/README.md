@@ -1,11 +1,11 @@
 
 ## 1. Create an event consumption model in Eclipse
 
-Now we’re going to create an event consumption model using the .json file that you downloaded in last Segtion 2 step 3.
+Now we’re going to create an event consumption model using the .json file that you downloaded in section 2, step 3.
 
-- 1. In ADT, open your SAP BTP, ABAP environment system based on guide.
+1. In ADT, open your SAP BTP, ABAP environment system based on the guide.
 
-- 2.	Create a new ABAP Package if you don’t have one. Make sure that your package name starts with the letter ‘Z’.  For example:
+2.	Create a new ABAP Package if you don’t have one yet. Make sure that your package name starts with the letter ‘Z’.  For example:
 
 - Name: ZFREIGHT_ORDER_EVENT_PACKAGE
 - Description: event consumption for freight order
@@ -16,18 +16,18 @@ Now we’re going to create an event consumption model using the .json file that
 ![Alt text](img/image-3.png)
 ![Alt text](img/image-4.png)
 
-- 3.  Right-click your package and choose New > Other ABAP Repository Object > Business Services > Event Consumption Model, and click Next to launch the creation wizard.
+3.  Right-click your package and choose New > Other ABAP Repository Object > Business Services > Event Consumption Model, and click Next to launch the creation wizard.
 
 ![Alt text](img/image-5.png)
 ![Alt text](img/image-6.png)
 
-- 4. Fill in the fields and upload the .json file you saved previously into the new event consumption ADT wizard. This will then automatically generate everything you need for this event consumption model, such as the event handler custom code, authorization defaults values, and inbound service.
+4. Fill in the fields and upload the .json file you saved previously into the new event consumption ADT wizard. This will then automatically generate everything you need for this event consumption model, such as the event handler custom code, authorization defaults values, and inbound service.
 
-- Name: Is created with the Prefix and Identifier 
+- Name: Is created with the Prefix and Identifier
 - Description: event consumption model for freight order
-- Namespace/ Prefix/ Identifier : Z and FREIGHTORDERCREATEDEVENT
+- Namespace/ Prefix/ Identifier: Z and FREIGHTORDERCREATEDEVENT
 - Event specification File: the .json file that you created
-- 5. click Next.
+5. click Next.
 
 ![Alt text](img/image-7.png)
 ![Alt text](img/image-8.png)
@@ -46,9 +46,9 @@ Right-click your package and choose New > Other ABAP Repository Object > Cloud C
 
 Enter the following name and description:
 
-- Name:Z_EVENT_SCENARIO_FREIGHT_ORDER
+- Name: Z_EVENT_SCENARIO_FREIGHT_ORDER
 - Description: event consupmtion scenario for freight order
-Click **Next**.
+- Click **Next**.
 
 ![Alt text](img/image-14.png)
 ![Alt text](img/image-15.png)
@@ -78,7 +78,7 @@ Enter the following name and description:
 Define the table with the following code
 
 ``` 
- @EndUserText.label : 'Database table for freight order'
+@EndUserText.label : 'Database table for freight order'
 @AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
 @AbapCatalog.tableCategory : #TRANSPARENT
 @AbapCatalog.deliveryClass : #A
@@ -131,7 +131,7 @@ Remove comment from these lines:
 DATA ls_business_data TYPE STRUCTURE FOR HIERARCHY Z_BusinessPartner_Created_v1.      
   ls_business_data = io_event->get_business_data( ).
 ```
-You need to adjust the code as the following in your method. pLease don't just copy and paste.
+You need to adjust the code as the following in your method. Pease don't just copy and paste.
 
 ```
    DATA ls_business_data TYPE STRUCTURE FOR HIERARCHY Z_FreightOrder_Created_v1_568B. //this line maybe deifferent .
@@ -152,10 +152,4 @@ You need to adjust the code as the following in your method. pLease don't just c
 ### 5. Acctivate the  Define handle event methods
 
 Please right click the communication scenario and select activate to activate the communication scenario.
-
-
-
-
-
-
 
