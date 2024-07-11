@@ -1,9 +1,9 @@
 
-## 1. Create communication arrangement in SAP S/4HANA Cloud to expose Freight Order API .
+## 1. Create communication arrangement in SAP S/4HANA Cloud to expose Freight Order API.
 
-**prerequisites**:
+**Prerequisites**:
 
-You user account in SAP SAP S/4HANA Cloud has been assigned with user role **BR_ADMINISTRATOR** or **BR_CONF_EXPERT_BUS_NET_INT**
+You user account in SAP SAP S/4HANA Cloud has been assigned the user role **BR_ADMINISTRATOR** or **BR_CONF_EXPERT_BUS_NET_INT**
 
 
 ![Alt text](img/image.png)
@@ -18,7 +18,7 @@ You user account in SAP SAP S/4HANA Cloud has been assigned with user role **BR_
 ![Alt text](img/image-10.png)
 ![Alt text](img/image-12.png)
 
-As a result, we get the Freight order api URL address and metadata , user name and password .
+As a result, we get the Freight order api URL address and metadata, user name and password.
 
 ## 2. Create consumption model in Eclipse ADT with metadata file from previouse step.
 
@@ -40,7 +40,7 @@ As a result, we get the Freight order api URL address and metadata , user name a
 ![Alt text](img/image-26.png)
 ![Alt text](img/image-27.png)
 
-## 4. Create communication scenario in Eclipse ADT .
+## 4. Create communication scenario in Eclipse ADT.
 
 ![Alt text](img/image-14.png)
 ![Alt text](img/image-28.png)
@@ -67,7 +67,7 @@ As a result, we get the Freight order api URL address and metadata , user name a
 ![Alt text](img/image-46.png)
 ![Alt text](img/image-47.png)
 
-## 6. Create freight order item table in Eclipse Adt .
+## 6. Create freight order item table in Eclipse Adt.
 
 ![Alt text](img/image-48.png)
 ![Alt text](img/image-49.png)
@@ -129,7 +129,7 @@ Push ***command + s*** in Mac to save then ***activate*** it .
 
 ![Alt text](img/image-51.png)
 
-## 7. Create freight order table in Eclipse Adt .
+## 7. Create freight order table in Eclipse Adt.
 
 ![Alt text](img/image-48.png)
 ![alt text](image.png)
@@ -378,7 +378,7 @@ ENDCLASS.
 Push ***command + s*** in Mac to save then ***acivate*** it .
 
 
-## 9. Create freight order in SAP S/4HANA Cloud and check the Freight order and freight order item table in Eclipse ADT .
+## 9. Create freight order in SAP S/4HANA Cloud and check the Freight order and freight order item table in Eclipse ADT.
 
 ### Create freight order in SAP S/4HANA Cloud
 
@@ -388,7 +388,7 @@ Push ***command + s*** in Mac to save then ***acivate*** it .
 ![Alt text](img/image-23%5B1%5D.png)
 ![Alt text](img/image-52.png)
 
-### Check result in table in Eclipse ADT
+### Check result in table in Eclipse ADT.
 
 ![Alt text](img/image-25%5B1%5D.png)
 
