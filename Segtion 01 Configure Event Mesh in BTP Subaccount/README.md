@@ -57,5 +57,5 @@ You can use the following JSON file:
 ![Alt text](./image-10.png)
 ![Alt text](./image-11.png)
 
-We will use the copied service key to create communication arrangements in SAP S/4Hana Cloud.
+You will need the copied service key to create communication arrangements in SAP S/4HANA Cloud.
 
