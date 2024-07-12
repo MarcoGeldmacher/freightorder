@@ -5,21 +5,21 @@
 -  You have [created Dev Space with type SAP Fiori in SAP Business Application Studio](https://help.sap.com/docs/bas/sap-business-application-studio/working-in-dev-space-manager)
 
 
-## 1. Login into SAP BTP sub-account which has SAP BTP ABAP Environment instance .
+## 1. Login into your SAP BTP sub-account that contains your SAP BTP ABAP Environment instance.
 
 ![alt text](image-12.png)
 ![alt text](image-52.png)
 ![alt text](image-53.png)
 ![alt text](image-54.png)
 
-**Note: Pleae make sure that BTP Sub-account has instance SAP BTP ABAP Environment. Please refer to the following screen shots**
+**Note: Pleae make sure that the BTP Sub-account has an instance for SAP BTP ABAP Environment setup. Please refer to the following screenshots:**
 
 ![alt text](image-10.png)
 ![alt text](image-11.png)
 
 
 
-## 2. Create Fiori Application in SAP Business Application Studio.
+## 2. Create a Fiori Application in SAP Business Application Studio.
 
 ![Alt text](image-13.png)
 ![Alt text](image-14.png)
@@ -31,7 +31,7 @@
 
 ![alt text](image-105.png)
 
-please use ui5 version 1.120.8
+Please use ui5 version 1.120.8
 
 - Module name: freightordermgt
 - Application title: Freight Order Attach Management
@@ -50,6 +50,7 @@ please use ui5 version 1.120.8
 - Title: Freight Order
 - Subtitle: Attach Management
 
+
 ![Alt text](image-5.png)
 ![Alt text](image-6.png)
 ![alt text](image-57.png)
@@ -62,7 +63,9 @@ please use ui5 version 1.120.8
 ![alt text](image-64.png)
 ![alt text](image-65.png)
 
+
 ## 3. Add custom controller to Object Page view.
+
 
 ![alt text](image-67.png)
 ![alt text](image-68.png)
@@ -77,7 +80,7 @@ Controller Name: FoController
 
 
 
-Adjust FoController like the following code .
+Adjust FoController like in the following code:
 
 ```javascript
 
@@ -293,7 +296,8 @@ sap.ui.define(['sap/ui/core/mvc/ControllerExtension','sap/ui/model/json/JSONMode
 ![alt text](image-82.png)
 
 
-Adjust the fragment code as the following:
+Adjust the fragment code as follows:
+
 ```xml
 <core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:macros="sap.fe.macros" validationSuccess=".extension.freightordermgt.ext.controller.FoController.onFragVali" >
 		<ScrollContainer id="_IDGenScrollContainer1"
@@ -314,16 +318,17 @@ Adjust the fragment code as the following:
 ```
 ![alt text](image-83.png)
 
-## 5. Add fragment for uploading file under ext/fragment
+## 5. Add fragment for uploading file under ext/fragment.
 
 ![alt text](image-84.png)
 ![alt text](image-85.png)
 
 
-**please change the file name to : fileselector.fragment.xml**
+**Please change the file name to: fileselector.fragment.xml**
 
 
-Adjust the fragement code as the following:
+Adjust the fragement code as follows:
+
 ```XML
 <core:FragmentDefinition  xmlns="sap.m" xmlns:l="sap.ui.layout"  xmlns:core="sap.ui.core" xmlns:u="sap.ui.unified" xmlns:upload="sap.m.upload" >
 	<Dialog id="uploadDialogSet" title="File Upload">
@@ -347,15 +352,16 @@ Adjust the fragement code as the following:
 ```
 
 
-## 6. Add custom action for Attachment View in item Object Page view Header.
+## 6. Add a custom action for the Attachment View in the item Object Page view Header.
 
 ![alt text](image-86.png)
 ![alt text](image-87.png)
 ![alt text](image-88.png)
 ![alt text](image-89.png)
 
-- Action ID: showpdf
-- Button Text: Show PDF
+Action ID: showpdf
+
+Button Text: Show PDF
 
 ![alt text](image-90.png)
 
