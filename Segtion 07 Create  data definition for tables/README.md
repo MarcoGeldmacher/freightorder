@@ -52,7 +52,7 @@ Push ***Command + S*** in Mac and activate it .
 ![Alt text](image-7.png)
 ![Alt text](image-8.png)
 
-Adjust the code like the following.
+Adjust the code as follows:
 
 ```
 @AccessControl.authorizationCheck: #NOT_REQUIRED
@@ -215,7 +215,7 @@ Push ***Command + S*** in Mac and activate it .
 ![Alt text](image-17.png)
 ![Alt text](image-18.png)
 
-Adjust the code as like following:
+Adjust the code as follows:
 
 ```ABAP
 @EndUserText.label: 'Projection view for ZR_FORDER_ITEMS'
@@ -283,7 +283,7 @@ define view entity ZC_FORDER_ITEMS
 
 ```
 
-Push ***Command + S*** in Mac and activate it .
+Push ***Command + S*** in Mac and activate it.
 
 ![Alt text](image-27.png)
 
@@ -291,14 +291,15 @@ Push ***Command + S*** in Mac and activate it .
 
 ![Alt text](image-19.png)
 
-Name:ZC_FREIGHTORDER
+Name: ZC_FREIGHTORDER
+
 Description: Annotation for projection view ZC_FREIGHTORDER
 
 ![Alt text](image-20.png)
 ![Alt text](image-21.png)
 ![Alt text](image-22.png)
 
-Update the code like the following:
+Update the code as follows:
 
 ```ABAP
 @Metadata.layer: #CORE
@@ -511,7 +512,7 @@ annotate view ZC_FREIGHTORDER with
 }
 ```
 
-Push ***Command + S*** in Mac and activate it .
+Push ***Command + S*** in Mac and activate it.
 
 ![Alt text](image-28.png)
 
@@ -524,8 +525,8 @@ Description: Anotation for projection view ZC_FORDER_ITEMS
 ![Alt text](image-25.png)
 ![Alt text](image-26.png)
 
-Adjust the code as the following:
-d
+Adjust the code as follows:
+
 ```ABAP
 @Metadata.layer: #CORE
 @UI: {
@@ -816,7 +817,7 @@ annotate view ZC_FORDER_ITEMS with
 
 }
 ```
-Push ***Command + S*** in Mac and activate it .
+Push ***Command + S*** in Mac and activate it.
 
 
 ![Alt text](image-29.png)
