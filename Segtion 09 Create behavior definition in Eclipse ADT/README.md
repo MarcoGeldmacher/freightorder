@@ -1,16 +1,21 @@
 
 
 ### 1. Create data definition zfile_content_raw which is used in action uploadfiles.
+
 ![alt text](image-13.png)
 ![alt text](image-14.png)
 ![alt text](image-15.png)
-- Name: zfile_content_raw
-- Description: File Content Raw
+
+Name: zfile_content_raw
+
+Description: File Content Raw
+
 ![alt text](image-16.png)
 ![alt text](image-17.png)
 ![alt text](image-18.png)
 
-Adjust the code as the following:
+Adjust the code as follows:
+
 ```
 @EndUserText.label: 'File Content Raw'
 define abstract entity zfile_content_raw
@@ -22,14 +27,15 @@ define abstract entity zfile_content_raw
 }
 ```
 
-**Save and Activate the data definition**
+**Save and Activate the data definition.**
 
 
-### 2.  create behavior definition for view ZR_FREIGHTORDER 
+### 2.  Create behavior definition for view ZR_FREIGHTORDER.
 
 ![Alt text](image.png)
 ![Alt text](image-1.png)
-Ajust the behavior definition as the following:
+
+Ajust the behavior definition as follows:
 
 ```
 managed implementation in class zbp_r_freightorder unique;
@@ -131,6 +137,7 @@ authorization dependent by _FREIGHTORDER
   association _FREIGHTORDER;
 }
 ```
+
 ![Alt text](image-2.png)
 
 ![alt text](image-10.png)
@@ -208,7 +215,7 @@ CLASS lhc_ZR_FREIGHTORDER IMPLEMENTATION.
 ENDCLASS.
 ```
 
-**Adjust the code likes the following:**
+**Adjust the code as follows:**
 
 ```
 CLASS lhc_zr_forder_items DEFINITION INHERITING FROM cl_abap_behavior_handler.
@@ -493,7 +500,8 @@ CLASS lhc_ZR_FREIGHTORDER IMPLEMENTATION.
 ENDCLASS.
 ```
 
-Activate the behavior definition .
+Activate the behavior definition.
+
 ![Alt text](image-4.png)
 ![Alt text](image-5.png)
 ![Alt text](image-6.png)
@@ -505,7 +513,7 @@ Activate the behavior definition .
 ![Alt text](image-5.png)
 ![Alt text](image-9.png)
 
-Adjust the behavior code of  ZC_FREIGHTORDER like the following:
+Adjust the behavior code of  ZC_FREIGHTORDER as follows:
 
 ```
 projection;
